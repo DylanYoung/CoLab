@@ -6,7 +6,8 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "express": "3.4.8"
+    "feathers": "0.3.0"
+    , "express": "3.4.8"
     , "socket.io": "0.9.16"
     , "redis": "0.10.0"
     , "mongoose": "3.8.4"
