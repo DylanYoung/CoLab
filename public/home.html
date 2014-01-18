@@ -10,7 +10,7 @@
     <title>CoLab Collaboration Hub</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 
     <!-- Add custom CSS here -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
@@ -183,13 +183,6 @@
                             Yo-ho! (arrrrr....)
                         </div>
                     </div>    
-                    <script>
-                        $('#myTab a').click(function (e) {
-                            e.preventDefault();
-                            $(this).tab('show');
-                        })
-                    </script>  
-                    
                     </p>
                 </div>
             </div>
@@ -223,22 +216,11 @@
     <!-- /Footer -->
 
     <!-- JavaScript -->
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="jQuery/jquery.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.js"></script>
 
     <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
-    <script>
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    </script>
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    </script>
+    <script src="js/home.js"></script>  
     
     <!--
     <script>
