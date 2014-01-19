@@ -1,114 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Projects</title>
-
-    <!-- Bootstrap core CSS -->
+    
+    <!-- Bootstrap -->
     <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 
     <!-- Add custom CSS here -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-</head>
-
+    <link href="css/colab.css" rel="stylesheet">
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    
+   
+    
+  </head>
+  
 <body>
-
-    <!-- Side Menu -->
-    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand"><a href="http://startbootstrap.com">Start Bootstrap</a>
-            </li>
-            <li><a href="#top">Home</a>
-            </li>
-            <li><a href="#about">About</a>
-            </li>
-            <li><a href="#services">Services</a>
-            </li>
-            <li><a href="#portfolio">Portfolio</a>
-            </li>
-            <li><a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </div>
-    <!-- /Side Menu -->
-
-    <div class="container">
-
-        <table class="table projects-container table-responsive">
-            <thead>
-                <tr>
-                    <td>Name</td>
-                    <td>Description</td>
-                    <td>Tags</td>
-                </tr>
-            </thead>
-
-            <tbody>
-
-            </tbody>
-        </table>
-
-    </div>
-
-    
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center">
-                    <ul class="list-inline">
-                        <li><i class="fa fa-facebook fa-3x"></i>
-                        </li>
-                        <li><i class="fa fa-twitter fa-3x"></i>
-                        </li>
-                        <li><i class="fa fa-dribbble fa-3x"></i>
-                        </li>
-                    </ul>
-                    <div class="top-scroll">
-                        <a href="#top"><i class="fa fa-circle-arrow-up scroll fa-4x"></i></a>
-                    </div>
-                    <hr>
-                    <p>Copyright &copy; CoLab 2014</p>
+    <!-- top navbar -->
+    <div id="page" class="container">
+            <div class="col-xs-12 colab-nav top-nav">
+            
+            <p class="col-xs-2"> <-- Wish we had logo here.</p>
+            
+            <!-- Notifications -->
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default"> <span class="glyphicon glyphicon-flag"></span></button>
+                  <button type="button" class="btn btn-default"> <span class="glyphicon glyphicon-comment"></span></button>
+                  <button type="button" class="btn btn-default"> <span class="glyphicon glyphicon-calendar"></span></button>
                 </div>
+                
+            <!-- Search Box/ Button -->    
+                <form class="col-md-offset-2 form-search colab-search">
+  <input class="form-control col-xs-1" id="focusedInput" type="text" value="Why won't this go right >>">
+  <button type="submit" class="btn btn-default">Search</button>
+</form>
+                
+            <!-- User Info/Settings -->    
+                <div class="col-md-offset-1 btn-group">
+  <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-user"></span></button>
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+            </div>  
+                      
+        <!-- Side Bar -->
+            <div class="colab-nav side-nav col-xs-2">
+                <ul>
+                    <li>
+                        <a href=""><h4>My Projects</h4></a>
+                    </li>
+                    <li>
+                        <a href=""><h4>Following</h4></a>
+                    </li>
+                    <hr />
+                    <li>
+                        <a href=""><h4>Fav Tag</h4></a>
+                    </li>
+                    <li>
+                        <a href=""><h4>Other Fav Tag</h4></a>
+                    </li>
+                    <li>
+                        <a href=""><h4>Other Other Tag</h4></a>
+                    </li>
+                </ul>
+            <!-- Filler to Extend Sidebar -->
+                <p style="color: rgba(0, 0, 205, 0.75);">.</p>
+                <p style="color: rgba(0, 0, 205, 0.75);">.</p>
+                <p style="color: rgba(0, 0, 205, 0.75);">.</p>
+                <p style="color: rgba(0, 0, 205, 0.75);">.</p>
+                <p style="color: rgba(0, 0, 205, 0.75);">.</p>
+                <p style="color: rgba(0, 0, 205, 0.75);">.</p>
+                <p style="color: rgba(0, 0, 205, 0.75);">.</p>
+                <p style="color: rgba(0, 0, 205, 0.75);">.</p>
+                <p style="color: rgba(0, 0, 205, 0.75);">.</p>
+                <p style="color: rgba(0, 0, 205, 0.75);">.</p>
+                <p style="color: rgba(0, 0, 205, 0.75);">.</p>
+                <p style="color: rgba(0, 0, 205, 0.75);">.</p>
+                <p style="color: rgba(0, 0, 205, 0.75);">.</p>
+                <p style="color: rgba(0, 0, 205, 0.75);">.</p>
+                <p style="color: rgba(0, 0, 205, 0.75);">.</p>
+                <p style="color: rgba(0, 0, 205, 0.75);">.</p>
+                <p style="color: rgba(0, 0, 205, 0.75);">.</p>
+                <p style="color: rgba(0, 0, 205, 0.75);">.</p>
+                <p style="color: rgba(0, 0, 205, 0.75);">.</p>
+                <p style="color: rgba(0, 0, 205, 0.75);">.</p>
+                <p style="color: rgba(0, 0, 205, 0.75);">.</p>
+                <p style="color: rgba(0, 0, 205, 0.75);">.</p>
+            
             </div>
+            
+         <!-- Content Area -->   
+            <div id="colab-content" class="col-xs-10">
+            
+            <h1>AJAX ME PLZ!</h1>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+ 
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accomp
+            </div>            
         </div>
-    </footer>
-    <!-- /Footer -->
-
-    <!-- JavaScript -->
-    <script src="jQuery/jquery.min.js"></script>
-    <script src="bootstrap/dist/js/bootstrap.js"></script>
-
-    <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
-    <script src="js/projects.js"></script>  
-    
-    <!--
-    <script>
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    </script>  -->
-
-</body>
-
-</html>
+    </div>
+    <script src="bootstrap/dist/js/bootstrap.css" type="text/javascript"></script>
+</body
+</html>    
